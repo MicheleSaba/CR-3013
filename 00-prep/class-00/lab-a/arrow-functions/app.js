@@ -152,7 +152,6 @@ let message = function(name) {
 // TODO: Uncomment the following line of code to see the output in the browser console
 console.log(message('Allie'));
 
-
 let Student = function(name, age, hometown) {
   this.name = name;
   this.age = age;
@@ -164,7 +163,6 @@ let joe = new Student('Joe', 'Schmoe', 100);
 // TODO: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this code to break!
 console.log(joe);
-
 
 Student.prototype.greeting = function() {
   return `Hi, my name is ${this.name}`;
@@ -182,8 +180,6 @@ Student.courseName = function() {
 // TODO: Uncomment the following line of code to see the output in the browser console
 console.log(Student.courseName());
 
-
-
 // STEP 11
 // How do arrow functions affect constructor functions?
 Student.prototype.scope = function() {
@@ -200,8 +196,8 @@ console.log(joe.scopeArrow());
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-// undefined
+// It returns undefined
 // 2. What is "this" when joe.scopeArrow() is invoked?
-// WEindow
+// Window
 // 3. Explain why "this" is different when an arrow function is used.
-// when an arrow function is used, the scope of the function bubbles up to the next-nearest scope
+// When an arrow function is used, the scope of the function bubbles up to the next-nearest scope
